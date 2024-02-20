@@ -1,0 +1,45 @@
+/* Import CSS variables */
+@import "variables";
+
+/**
+ * Set up the base styles here.
+ * Use this to normalize default browser styles.
+ */
+* {
+	box-sizing: border-box;
+	outline: 0;
+	border: 0;
+	padding: 0;
+	margin: 0;
+
+	font: inherit;
+	font-family: system-ui;
+	color: inherit;
+	line-height: 1;
+
+	-webkit-tap-highlight-color: transparent;
+}
+
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+	line-height: 1.2;
+}
+
+p {
+	text-wrap: pretty;
+	line-height: 1.4;
+}
+
+img {
+	width: 100%;
+}

@@ -1,0 +1,12 @@
+/**
+ * Set up CSS variables only here.
+ * Use Sass-like syntax.
+ */
+
+/* -- screen sizes */
+$screen-sm: 375px;
+$screen-md: 480px;
+$screen-lg: 640px;
+$screen-xl: 1024px;
+$screen-xxl: 1366px;
+$screen-xxxl: 1920px;
