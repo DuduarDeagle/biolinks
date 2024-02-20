@@ -3,6 +3,18 @@
  * Use Sass-like syntax.
  */
 
+$chetwode-blue-50: oklch(96.43% 0.02 269.99deg);
+$chetwode-blue-100: oklch(93.28% 0.03 273.1deg);
+$chetwode-blue-200: oklch(87.53% 0.05 274.76deg);
+$chetwode-blue-300: oklch(79.49% 0.09 275.03deg);
+$chetwode-blue-400: oklch(69.28% 0.14 278.01deg);
+$chetwode-blue-500: oklch(63.92% 0.16 280.06deg);
+$chetwode-blue-600: oklch(52.35% 0.2 279.19deg);
+$chetwode-blue-700: oklch(46.84% 0.19 279.35deg);
+$chetwode-blue-800: oklch(40.96% 0.16 279.72deg);
+$chetwode-blue-900: oklch(36.8% 0.12 280.55deg);
+$chetwode-blue-950: oklch(26.4% 0.08 283.12deg);
+
 /* -- screen sizes */
 $screen-sm: 375px;
 $screen-md: 480px;

@@ -1,10 +1,33 @@
 /* Import CSS variables */
 @import "variables";
 
+/* Import fonts */
+@font-face {
+	font-display: swap;
+	font-family: Urbanist;
+	src: url("../fonts/urbanist/urbanist-latin-500-normal.woff2") format("woff2");
+	font-weight: 500;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Urbanist;
+	src: url("../fonts/urbanist/urbanist-latin-700-normal.woff2") format("woff2");
+	font-weight: 700;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Urbanist;
+	src: url("../fonts/urbanist/urbanist-latin-900-normal.woff2") format("woff2");
+	font-weight: 900;
+}
+
 /**
  * Set up the base styles here.
  * Use this to normalize default browser styles.
  */
+
 * {
 	box-sizing: border-box;
 	outline: 0;
@@ -13,7 +36,7 @@
 	margin: 0;
 
 	font: inherit;
-	font-family: system-ui;
+	font-family: Urbanist, system-ui;
 	color: inherit;
 	line-height: 1;
 
@@ -25,12 +48,26 @@
 	box-sizing: inherit;
 }
 
+body {
+	font-weight: 500;
+
+	background: $chetwode-blue-500;
+
+	user-select: none;
+}
+
+header,
+main {
+	padding-block: 1.5rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+	font-weight: 900;
 	text-wrap: balance;
 	line-height: 1.2;
 }
@@ -42,4 +79,15 @@ p {
 
 img {
 	width: 100%;
+}
+
+/**
+ * Set up global components styles here.
+ */
+
+.container {
+	max-width: 90vw;
+	margin-inline: auto;
+
+	display: grid;
 }

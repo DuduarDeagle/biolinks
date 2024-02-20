@@ -1,0 +1,31 @@
+/**
+ * Set up only HomePage styles here.
+ */
+
+.container--header {
+	display: grid;
+	place-items: center;
+	gap: 1.5rem;
+}
+
+.profile-picture {
+	border: 2px solid black;
+	border-radius: 0.25rem;
+	width: 8rem;
+	height: auto;
+	margin-inline: auto;
+
+	display: block;
+}
+
+.title {
+	font-size: 2rem;
+}
+
+.link-list {
+	display: grid;
+	place-items: center;
+	gap: 1rem;
+
+	list-style: none;
+}

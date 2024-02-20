@@ -1,15 +1,54 @@
 ---
 /* Import layout */
 import Layout from "@layouts/Main.astro"
+
+/* Import styles */
+import styles from "@styles/Home.module.css"
 ---
 
 <Layout>
-	<h1>✌️ Hola mundo!</h1>
-</Layout>
+	<header>
+		<div class:list={["container", styles["container--header"]]}>
+			<img
+				class={styles["profile-picture"]}
+				src="/images/duduar.webp"
+				alt="Imagen de perfil de Duduar, realizada por computadora y con estilo Pixar; describe a un chico geek con lentes y peinado tipo Mohaw, viste una chaqueta de cuero y camiseta blanca y está sentado frente a una laptop, detrás tiene vista a través de una ventana de lo que parece ser una ciudad llena de edificios."
+			/>
+			<h1 class={styles["title"]}>@duduardeagle</h1>
+		</div>
+	</header>
 
-<style is:global>
-	body {
-		background: #1a1a1a;
-		color: #eee;
-	}
-</style>
+	<main>
+		<div class="container">
+			<ul class={styles["link-list"]}>
+				<li>Sitio web</li>
+				<li>GitHub</li>
+				<li>LinkedIn</li>
+				<li>Twitter</li>
+				<li>Mastodon</li>
+				<li>Telegram</li>
+				<li>Simplex</li>
+				<li>Email</li>
+			</ul>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div>
+				<span>built with...</span>
+				<span>code on...</span>
+			</div>
+			<p>copy notice</p>
+		</div>
+	</footer>
+
+	<style>
+		footer {
+			margin-top: 1.5rem;
+			background: black;
+			color: white;
+			padding: 1.5rem;
+		}
+	</style>
+</Layout>
