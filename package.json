@@ -1,8 +1,10 @@
 {
 	"name": "biolink-duduar",
+	"homepage": "https://links.duduar.site",
 	"author": {
 		"name": "Duduar Deagle",
-		"email": "imduduar@proton.me"
+		"email": "hi@duduar.dev",
+		"url": "https://duduar.site"
 	},
 	"type": "module",
 	"license": "AGPL-3.0-only",
