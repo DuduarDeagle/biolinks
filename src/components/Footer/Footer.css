@@ -1,0 +1,27 @@
+/**
+ * Set up only Footer component style here.
+ */
+
+.footer {
+	padding-block: 1.5rem;
+
+	font-size: 0.875rem;
+	color: #eee;
+
+	&__container {
+		gap: 2rem;
+	}
+
+	&__section-stack {
+		display: grid;
+		place-items: center;
+		gap: 0.5rem;
+	}
+
+	&__copyright-notice {
+		display: grid;
+		gap: 0.5rem;
+
+		text-align: center;
+	}
+}

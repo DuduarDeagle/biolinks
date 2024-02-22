@@ -2,53 +2,69 @@
 /* Import layout */
 import Layout from "@layouts/Main.astro"
 
+/* Import components */
+import { Button } from "@components/Buttons"
+import Footer from "@components/Footer"
+
 /* Import styles */
 import styles from "@styles/Home.module.css"
 ---
 
 <Layout>
-	<header>
-		<div class:list={["container", styles["container--header"]]}>
+	<header class={styles["header"]}>
+		<div class:list={["container", styles["header__container"]]}>
 			<img
 				class={styles["profile-picture"]}
 				src="/images/duduar.webp"
+				width="64"
+				height="64"
 				alt="Imagen de perfil de Duduar, realizada por computadora y con estilo Pixar; describe a un chico geek con lentes y peinado tipo Mohaw, viste una chaqueta de cuero y camiseta blanca y está sentado frente a una laptop, detrás tiene vista a través de una ventana de lo que parece ser una ciudad llena de edificios."
 			/>
-			<h1 class={styles["title"]}>@duduardeagle</h1>
+			<div class={styles["profile-data"]}>
+				<h1 class={styles["title"]}>@duduardeagle</h1>
+				<ul class={styles["skills-list"]}>
+					<li>💻 Ingeniero de Software</li>
+					<li>🧱 Desarrollador Frontend</li>
+					<li>🎨 Diseñador UI & UX</li>
+				</ul>
+			</div>
 		</div>
 	</header>
 
-	<main>
-		<div class="container">
-			<ul class={styles["link-list"]}>
-				<li>Sitio web</li>
-				<li>GitHub</li>
-				<li>LinkedIn</li>
-				<li>Twitter</li>
-				<li>Mastodon</li>
-				<li>Telegram</li>
-				<li>Simplex</li>
-				<li>Email</li>
-			</ul>
-		</div>
+	<main class={styles["main"]}>
+		<ul class:list={["container", styles["link-list"]]}>
+			<li>
+				<Button as="a">Sitio web</Button>
+			</li>
+			<li>
+				<Button as="a">Blog</Button>
+			</li>
+			<li>
+				<Button as="a">GitHub</Button>
+			</li>
+			<li>
+				<Button as="a">LinkedIn</Button>
+			</li>
+			<li>
+				<Button as="a">Twitter</Button>
+			</li>
+			<li>
+				<Button as="a">Mastodon</Button>
+			</li>
+			<li>
+				<Button as="a">Email</Button>
+			</li>
+			<li>
+				<Button as="a">WhatsApp</Button>
+			</li>
+			<li>
+				<Button as="a">Telegram</Button>
+			</li>
+			<li>
+				<Button as="a">Simplex</Button>
+			</li>
+		</ul>
 	</main>
 
-	<footer>
-		<div class="container">
-			<div>
-				<span>built with...</span>
-				<span>code on...</span>
-			</div>
-			<p>copy notice</p>
-		</div>
-	</footer>
-
-	<style>
-		footer {
-			margin-top: 1.5rem;
-			background: black;
-			color: white;
-			padding: 1.5rem;
-		}
-	</style>
+	<Footer />
 </Layout>

@@ -1,31 +1,50 @@
+/* Import CSS variables */
+@import "variables";
+
 /**
  * Set up only HomePage styles here.
  */
 
-.container--header {
-	display: grid;
-	place-items: center;
-	gap: 1.5rem;
+.header {
+	padding-top: 3rem;
+	padding-bottom: 1.5rem;
+
+	background: $chetwode-blue-500;
+
+	&__container {
+		gap: 0.5rem;
+	}
 }
 
 .profile-picture {
 	border: 2px solid black;
 	border-radius: 0.25rem;
-	width: 8rem;
-	height: auto;
-	margin-inline: auto;
+}
 
-	display: block;
+.profile-data {
+	display: grid;
+	gap: 0.5rem;
 }
 
 .title {
-	font-size: 2rem;
+	font-size: 1.5rem;
+}
+
+.skills-list {
+	display: grid;
+	place-items: center;
+	gap: 0.25rem;
+}
+
+.main {
+	padding-top: 1.5rem;
+	padding-bottom: 3rem;
+
+	background: $chetwode-blue-500;
 }
 
 .link-list {
 	display: grid;
 	place-items: center;
-	gap: 1rem;
-
-	list-style: none;
+	gap: 1.5rem;
 }
