@@ -207,9 +207,9 @@
 	},
 	"scripts": {
 		"prepare": "husky install",
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
+		"dev": "astro --port 8001 dev",
+		"build": "astro --port 8001 build",
+		"preview": "astro --port 8001 preview",
 		"start": "bun --bun dist/server/entry.mjs",
 		"lint": "eslint . --ext .js,.cjs,.mjs,.jsx,.ts,.tsx,.astro",
 		"prettier": "prettier . --check --plugin=prettier-plugin-astro",
