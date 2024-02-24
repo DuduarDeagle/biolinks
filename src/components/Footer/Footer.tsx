@@ -30,7 +30,7 @@ const Footer: React.FC<Props> = () => {
 					<p>
 						<a
 							target="_blank"
-							href="https://github.com/duduardeagle/biolink.git">
+							href="https://github.com/duduardeagle/biolinks.git">
 							Código fuente
 						</a>{" "}
 						bajo{" "}
