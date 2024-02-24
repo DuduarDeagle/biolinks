@@ -4,7 +4,24 @@ import Layout from "@layouts/Main.astro"
 
 /* Import components */
 import { Button } from "@components/Buttons"
+import Card from "@components/Card"
+import Container from "@components/Container"
+import { ContentGroup } from "@components/Groups"
 import Footer from "@components/Footer"
+import { Image } from "astro:assets"
+import Input from "@components/Input"
+import {
+	CopyIcon,
+	GitHubIcon,
+	LinkedInIcon,
+	MastodonIcon,
+	SendIcon,
+	SimpleXIcon,
+	TelegramIcon
+} from "@components/Icons"
+
+/* Import resources */
+import ProfilePicture from "../images/duduar.jpeg"
 
 /* Import styles */
 import styles from "@styles/Home.module.css"
@@ -12,59 +29,60 @@ import styles from "@styles/Home.module.css"
 
 <Layout>
 	<header class={styles["header"]}>
-		<div class:list={["container", styles["header__container"]]}>
-			<img
-				class={styles["profile-picture"]}
-				src="/images/duduar.webp"
-				width="64"
-				height="64"
-				alt="Imagen de perfil de Duduar, realizada por computadora y con estilo Pixar; describe a un chico geek con lentes y peinado tipo Mohaw, viste una chaqueta de cuero y camiseta blanca y está sentado frente a una laptop, detrás tiene vista a través de una ventana de lo que parece ser una ciudad llena de edificios."
-			/>
-			<div class={styles["profile-data"]}>
-				<h1 class={styles["title"]}>@duduardeagle</h1>
-				<ul class={styles["skills-list"]}>
-					<li>💻 Ingeniero de Software</li>
-					<li>🧱 Desarrollador Frontend</li>
-					<li>🎨 Diseñador UI & UX</li>
+		<Container>
+			<Card className={styles["card--profile"]}>
+				<ContentGroup className={styles["card--profile__user-info"]}>
+					<h1 class={styles["card--profile__username"]}>@duduardeagle</h1>
+					<span class={styles["card--profile__job-title"]}>
+						Ingeniero de Software
+					</span>
+				</ContentGroup>
+				<ul class={styles["card--profile__links-list"]}>
+					<li>
+						<LinkedInIcon />
+					</li>
+					<li>
+						<GitHubIcon />
+					</li>
+					<li>
+						<MastodonIcon />
+					</li>
+					<li>
+						<TelegramIcon />
+					</li>
+					<li>
+						<SimpleXIcon />
+					</li>
 				</ul>
-			</div>
-		</div>
+				<ContentGroup>
+					<Input
+						id="email"
+						name="email"
+						type="email"
+						value="hi@duduar.dev"
+						disabled
+					/>
+					<div class={styles["card--profile__email-buttons"]}>
+						<Button>
+							<CopyIcon />
+						</Button>
+						<Button>
+							<SendIcon />
+						</Button>
+					</div>
+				</ContentGroup>
+				<Image
+					src={ProfilePicture}
+					class={styles["card--profile__picture"]}
+					alt="Imagen de perfil de Duduar, realizada por computadora y con estilo Pixar; describe a un chico geek con lentes y peinado tipo Mohawk, viste una chaqueta de cuero y camiseta blanca y está sentado frente a una laptop, detrás tiene vista a través de una ventana de lo que parece ser una ciudad llena de edificios."
+					width={128}
+					height={128}
+					loading="eager"
+					quality={100}
+				/>
+			</Card>
+		</Container>
 	</header>
-
-	<main class={styles["main"]}>
-		<ul class:list={["container", styles["link-list"]]}>
-			<li>
-				<Button as="a">Sitio web</Button>
-			</li>
-			<li>
-				<Button as="a">Blog</Button>
-			</li>
-			<li>
-				<Button as="a">GitHub</Button>
-			</li>
-			<li>
-				<Button as="a">LinkedIn</Button>
-			</li>
-			<li>
-				<Button as="a">Twitter</Button>
-			</li>
-			<li>
-				<Button as="a">Mastodon</Button>
-			</li>
-			<li>
-				<Button as="a">Email</Button>
-			</li>
-			<li>
-				<Button as="a">WhatsApp</Button>
-			</li>
-			<li>
-				<Button as="a">Telegram</Button>
-			</li>
-			<li>
-				<Button as="a">Simplex</Button>
-			</li>
-		</ul>
-	</main>
 
 	<Footer />
 </Layout>

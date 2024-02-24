@@ -11,6 +11,8 @@
 	appearance: none;
 	background: black;
 
+	cursor: default;
+
 	&__container {
 		border: 2px solid black;
 		border-radius: 0.25rem;
@@ -21,6 +23,7 @@
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
+		gap: 0.5rem;
 
 		font-weight: 700;
 		text-align: center;

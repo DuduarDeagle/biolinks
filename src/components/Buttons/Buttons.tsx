@@ -35,7 +35,11 @@ export const Button: React.FC<Conditional> = ({ as = "button", ...props }) => {
 		)
 	}
 
-	const { children } = props as ButtonProps
+	const { onClick, children } = props as ButtonProps
 
-	return <button>{children}</button>
+	return (
+		<button className="btn" onClick={onClick}>
+			<span className="btn__container">{children}</span>
+		</button>
+	)
 }

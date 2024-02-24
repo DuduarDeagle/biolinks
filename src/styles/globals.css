@@ -85,14 +85,3 @@ ul {
 li {
 	width: 100%;
 }
-
-/**
- * Set up global components styles here.
- */
-
-.container {
-	max-width: 90vw;
-	margin-inline: auto;
-
-	display: grid;
-}

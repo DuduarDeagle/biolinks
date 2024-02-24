@@ -1,0 +1,16 @@
+/* Import CSS variables */
+@import "@styles/variables";
+
+.card {
+	position: relative;
+
+	border-radius: 0.25rem;
+	padding-block: 3rem;
+	padding-inline: 1.25rem;
+
+	display: grid;
+	place-items: center;
+	gap: 2rem;
+
+	background: $chetwode-blue-500;
+}
