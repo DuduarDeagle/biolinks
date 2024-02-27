@@ -36,7 +36,7 @@ const Footer: React.FC<Props> = () => {
 						<a
 							rel="noopener noreferrer"
 							target="_blank"
-							href="https://github.com/duduardeagle/biolinks.git"
+							href="https://github.com/duduardeagle/homepage.git"
 							className="footer__external-link">
 							Código fuente
 						</a>{" "}

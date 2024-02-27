@@ -1,16 +1,16 @@
 {
-	"name": "biolinks-duduar",
-	"homepage": "https://links.duduar.site",
+	"name": "duduar-homepage",
+	"homepage": "https://duduar.dev",
 	"author": {
 		"name": "Duduar Deagle",
 		"email": "hi@duduar.dev",
-		"url": "https://duduar.site"
+		"url": "https://duduar.dev"
 	},
 	"type": "module",
 	"license": "AGPL-3.0-only",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/duduardeagle/biolinks.git"
+		"url": "https://github.com/duduardeagle/homepage.git"
 	},
 	"private": true,
 	"dependencies": {
