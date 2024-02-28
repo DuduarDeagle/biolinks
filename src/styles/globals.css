@@ -48,12 +48,6 @@
 }
 
 body {
-	height: 100dvh;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
 	font-family: Urbanist, system-ui;
 	font-weight: 500;
 
@@ -80,8 +74,4 @@ p {
 
 ul {
 	list-style: none;
-}
-
-li {
-	width: 100%;
 }

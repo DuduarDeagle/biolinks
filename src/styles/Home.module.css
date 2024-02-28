@@ -8,6 +8,9 @@
 .header {
 	padding-top: 6rem;
 	padding-bottom: 1.5rem;
+
+	display: grid;
+	place-content: center;
 }
 
 .card {
@@ -16,6 +19,8 @@
 
 		&__user-info {
 			margin-top: 2.5rem;
+
+			gap: 1rem;
 		}
 
 		&__username {
@@ -25,6 +30,17 @@
 		&__job-title {
 			font-weight: 700;
 			font-size: 1.125rem;
+		}
+
+		&__skills {
+			display: inline-flex;
+			justify-content: center;
+			gap: 0.5rem;
+
+			li:not(:last-child) {
+				border-right: 1px solid #1c1c1c;
+				padding-right: 0.5rem;
+			}
 		}
 
 		&__links-list {

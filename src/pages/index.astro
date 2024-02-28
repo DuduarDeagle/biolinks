@@ -33,25 +33,47 @@ import styles from "@styles/Home.module.css"
 			<Card className={styles["card--profile"]}>
 				<ContentGroup className={styles["card--profile__user-info"]}>
 					<h1 class={styles["card--profile__username"]}>@duduardeagle</h1>
-					<span class={styles["card--profile__job-title"]}>
-						Ingeniero de Software
-					</span>
+					<ContentGroup>
+						<span class={styles["card--profile__job-title"]}>
+							Ingeniero de Software
+						</span>
+						<ul class={styles["card--profile__skills"]}>
+							<li>💻 Web</li>
+							<li>🎨 UI & UX</li>
+						</ul>
+					</ContentGroup>
+					<p>
+						¡Hey! ✌🏽 soy un profesional independiente, que crea soluciones
+						digitales increíbles con pasión y tecnología de vanguardia 🚀.
+					</p>
 				</ContentGroup>
 				<ul class={styles["card--profile__links-list"]}>
 					<li>
-						<LinkedInIcon />
+						<a rel="noopener" href="https://linkedin.com/in/duduardeagle">
+							<LinkedInIcon />
+						</a>
 					</li>
 					<li>
-						<GitHubIcon />
+						<a rel="noreferrer" href="https://github.com/duduardeagle">
+							<GitHubIcon />
+						</a>
 					</li>
 					<li>
-						<MastodonIcon />
+						<a rel="me" href="https://masto.es/@duduardeagle">
+							<MastodonIcon />
+						</a>
 					</li>
 					<li>
-						<TelegramIcon />
+						<a rel="noreferrer" href="https://t.me/duduardeagle">
+							<TelegramIcon />
+						</a>
 					</li>
 					<li>
-						<SimpleXIcon />
+						<a
+							rel="noreferrer"
+							href="https://simplex.chat/contact#/?v=1-4&smp=smp%3A%2F%2FSkIkI6EPd2D63F4xFKfHk7I1UGZVNn6k1QWZ5rcyr6w%3D%40smp9.simplex.im%2FHXWrPtK34C8Mvgo6kRsmKS53vJHy8qFz%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEADfaj_vB7cuHyvJMFJuDaYKRxzEpMDLN5NXIaO9r3QmA%253D%26srv%3Djssqzccmrcws6bhmn77vgmhfjmhwlyr3u7puw4erkyoosywgl67slqqd.onion">
+							<SimpleXIcon />
+						</a>
 					</li>
 				</ul>
 				<ContentGroup>
