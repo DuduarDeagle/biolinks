@@ -75,3 +75,7 @@ p {
 ul {
 	list-style: none;
 }
+
+label {
+	font-weight: 700;
+}
