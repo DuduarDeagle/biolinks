@@ -27,6 +27,7 @@ type Conditional = BaseProps & (ButtonProps | AnchorProps)
 /* Set up a conditional Button component */
 export const Button: React.FC<Conditional> = ({
 	as = "button",
+	id,
 	title,
 	children,
 	...props
@@ -38,7 +39,7 @@ export const Button: React.FC<Conditional> = ({
 		const { href } = props as AnchorProps
 
 		return (
-			<a href={href} className="btn" title={title}>
+			<a href={href} id={id} className="btn" title={title}>
 				<span className="btn__container">{children}</span>
 			</a>
 		)
@@ -50,7 +51,7 @@ export const Button: React.FC<Conditional> = ({
 	 * A 'button' element is redered by default
 	 */
 	return (
-		<button title={title} className="btn" onClick={onClick}>
+		<button id={id} className="btn" onClick={onClick} title={title}>
 			<span className="btn__container">{children}</span>
 		</button>
 	)

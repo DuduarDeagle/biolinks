@@ -101,7 +101,9 @@ import styles from "@styles/Home.module.css"
 						disabled
 					/>
 					<ContentGroup className={styles["content-group--email-buttons"]}>
-						<Button title="Copiar dirección de correo electrónico">
+						<Button
+							id="btnEmail"
+							title="Copiar dirección de correo electrónico">
 							<CopyIcon />
 						</Button>
 						<Button
@@ -127,3 +129,12 @@ import styles from "@styles/Home.module.css"
 
 	<Footer />
 </Layout>
+
+<script>
+	const btn = document.getElementById("btnEmail")
+	const email = document.getElementById("email") as HTMLInputElement
+
+	btn?.addEventListener("click", () => {
+		navigator.clipboard.writeText(email?.value)
+	})
+</script>
