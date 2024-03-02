@@ -1,6 +1,10 @@
 /* Import CSS variables */
 @import "@styles/variables";
 
+/**
+ * Set up only Card components styles here.
+ */
+
 .card {
 	position: relative;
 

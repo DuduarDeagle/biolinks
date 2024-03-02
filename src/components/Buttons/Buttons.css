@@ -1,3 +1,7 @@
+/**
+ * Set up only Button components styles here.
+ */
+
 .btn {
 	border: none;
 	border-radius: 0.25rem;
@@ -29,7 +33,6 @@
 		text-align: center;
 		color: #eee;
 
-		/* background: #8a2be2; */
 		background: #7d28c8;
 
 		transform: translate(0.125rem, -0.125rem);
