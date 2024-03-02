@@ -58,7 +58,7 @@ body {
 	font-weight: 500;
 
 	/* background: linear-gradient(to bottom right, #32b1db, #2f80ed); */
-	background: url("/texture.jpg");
+	background: url("/images/texture.jpg");
 	background-repeat: none;
 	background-size: cover;
 	background-position: center;
