@@ -3,6 +3,19 @@
  * Use Sass-like syntax.
  */
 
+/* -- colors */
+$purple-heart-50: oklch(97.68% 0.01 308.3deg);
+$purple-heart-100: oklch(94.8% 0.03 307.12deg);
+$purple-heart-200: oklch(90.39% 0.06 306.69deg);
+$purple-heart-300: oklch(83.1% 0.1 306.47deg);
+$purple-heart-400: oklch(72.6% 0.17 305.74deg);
+$purple-heart-500: oklch(62.93% 0.22 304.1deg);
+$purple-heart-600: oklch(55.7% 0.24 302.76deg);
+$purple-heart-700: oklch(49.38% 0.23 302.52deg);
+$purple-heart-800: oklch(43.88% 0.19 304.68deg);
+$purple-heart-900: oklch(38.16% 0.16 305.92deg);
+$purple-heart-950: oklch(28.99% 0.14 303.75deg);
+
 /* -- screen sizes */
 $screen-sm: 375px;
 $screen-md: 480px;

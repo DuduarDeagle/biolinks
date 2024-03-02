@@ -4,7 +4,6 @@
 
 .footer {
 	border-top: 1px solid rgb(255 255 255 / 40%);
-	padding-block: 3rem;
 
 	font-size: 0.875rem;
 
@@ -12,21 +11,15 @@
 	backdrop-filter: blur(4px);
 	box-shadow: 0 -8px 32px 0 rgb(31 38 135 / 36%);
 
-	&__container {
-		gap: 2rem;
-	}
-
 	&__section-stack {
 		place-items: center;
-		gap: 1rem;
 	}
 
 	&__external-link {
 		&::after {
 			width: 0.75rem;
 			height: 0.875rem;
-			margin-right: 0.25rem;
-			margin-left: 0.125rem;
+			margin-right: 0.125rem;
 
 			display: inline-block;
 

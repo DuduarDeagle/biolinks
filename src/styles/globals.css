@@ -65,6 +65,12 @@ body {
 	user-select: none;
 }
 
+header,
+footer {
+	padding-block: 3rem;
+	margin-top: 3rem;
+}
+
 h1,
 h2,
 h3,

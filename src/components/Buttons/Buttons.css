@@ -1,3 +1,6 @@
+/* Import CSS variables */
+@import "@styles/variables";
+
 /**
  * Set up only Button components styles here.
  */
@@ -33,7 +36,7 @@
 		text-align: center;
 		color: #eee;
 
-		background: #7d28c8;
+		background: $purple-heart-700;
 
 		transform: translate(0.125rem, -0.125rem);
 		transition: transform 75ms linear;

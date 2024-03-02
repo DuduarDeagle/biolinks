@@ -31,9 +31,9 @@ import styles from "@styles/Home.module.css"
 	<header class={styles["header"]}>
 		<Container>
 			<Card className={styles["card--profile"]}>
-				<ContentGroup className={styles["card--profile__user-info"]}>
+				<ContentGroup className={styles["content-group--user-info"]}>
 					<h1 class={styles["card--profile__username"]}>@duduardeagle</h1>
-					<ContentGroup>
+					<ContentGroup className={styles["content-group--career-info"]}>
 						<span class={styles["card--profile__job-title"]}>
 							Ingeniero de Software
 						</span>
@@ -89,10 +89,10 @@ import styles from "@styles/Home.module.css"
 						</a>
 					</li>
 				</ul>
-				<ContentGroup>
-					<label for="email" class={styles["card--profile__contact-label"]}
-						>📬 Contáctame</label
-					>
+				<ContentGroup className={styles["content-group--email-info"]}>
+					<label for="email" class={styles["card--profile__contact-label"]}>
+						📬 Contáctame
+					</label>
 					<Input
 						id="email"
 						name="email"
@@ -100,14 +100,17 @@ import styles from "@styles/Home.module.css"
 						value="hi@duduar.dev"
 						disabled
 					/>
-					<div class={styles["card--profile__email-buttons"]}>
+					<ContentGroup className={styles["content-group--email-buttons"]}>
 						<Button title="Copiar dirección de correo electrónico">
 							<CopyIcon />
 						</Button>
-						<Button as="a" title="Enviar correo electrónico">
+						<Button
+							as="a"
+							href="mailto:hi@duduar.dev"
+							title="Enviar correo electrónico">
 							<SendIcon />
 						</Button>
-					</div>
+					</ContentGroup>
 				</ContentGroup>
 				<Image
 					src={ProfilePicture}
