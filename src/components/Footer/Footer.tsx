@@ -23,7 +23,7 @@ const Footer: React.FC<Props> = () => {
 		<footer className="footer">
 			<Container>
 				<ContentGroup className="footer__section-stack">
-					<a target="_blank" href="https://astro.build">
+					<a rel="external" target="_blank" href="https://astro.build">
 						<img
 							src="https://astro.badg.es/v2/built-with-astro/tiny.svg"
 							alt="Insignia con la frase en inglés 'Built with Astro', que hace referencia al framework con el que fue desarrollada la página."
