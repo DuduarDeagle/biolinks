@@ -25,27 +25,32 @@ interface AnchorProps
 type Conditional = BaseProps & (ButtonProps | AnchorProps)
 
 /* Set up a conditional Button component */
-export const Button: React.FC<Conditional> = ({ as = "button", ...props }) => {
+export const Button: React.FC<Conditional> = ({
+	as = "button",
+	title,
+	children,
+	...props
+}) => {
 	/**
 	 * In this case if you define the 'as' prop as 'a', you can render an 'a' element
 	 */
 	if (as === "a") {
-		const { href, children } = props as AnchorProps
+		const { href } = props as AnchorProps
 
 		return (
-			<a href={href} className="btn">
+			<a href={href} className="btn" title={title}>
 				<span className="btn__container">{children}</span>
 			</a>
 		)
 	}
 
-	const { onClick, children } = props as ButtonProps
+	const { onClick } = props as ButtonProps
 
 	/**
 	 * A 'button' element is redered by default
 	 */
 	return (
-		<button className="btn" onClick={onClick}>
+		<button title={title} className="btn" onClick={onClick}>
 			<span className="btn__container">{children}</span>
 		</button>
 	)

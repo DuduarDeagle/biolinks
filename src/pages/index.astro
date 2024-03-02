@@ -42,17 +42,17 @@ import styles from "@styles/Home.module.css"
 							<li>🎨 UI & UX</li>
 						</ul>
 					</ContentGroup>
-					<p>
-						¡Hey! ✌🏽 soy un profesional independiente, que crea soluciones
-						digitales increíbles con pasión y tecnología de vanguardia 🚀.
-					</p>
 				</ContentGroup>
+				<p>
+					¡Hola mundo! ✌🏽, soy un profesional independiente que crea soluciones
+					digitales increíbles con pasión y tecnología de vanguardia 🚀.
+				</p>
 				<ul class={styles["card--profile__links-list"]}>
 					<li>
 						<a
 							rel="noopener"
 							href="https://linkedin.com/in/duduardeagle"
-							aria-label="Ir a mi perfil de LinkedIn">
+							title="Ir a mi perfil de LinkedIn">
 							<LinkedInIcon />
 						</a>
 					</li>
@@ -60,7 +60,7 @@ import styles from "@styles/Home.module.css"
 						<a
 							rel="noreferrer"
 							href="https://github.com/duduardeagle"
-							aria-label="Ir a mi perfil de GitHub">
+							title="Ir a mi perfil de GitHub">
 							<GitHubIcon />
 						</a>
 					</li>
@@ -68,7 +68,7 @@ import styles from "@styles/Home.module.css"
 						<a
 							rel="me"
 							href="https://masto.es/@duduardeagle"
-							aria-label="Sígueme en Mastodon">
+							title="Sígueme en Mastodon">
 							<MastodonIcon />
 						</a>
 					</li>
@@ -76,7 +76,7 @@ import styles from "@styles/Home.module.css"
 						<a
 							rel="noreferrer"
 							href="https://t.me/duduardeagle"
-							aria-label="Contáctame por Telegram">
+							title="Contáctame por Telegram">
 							<TelegramIcon />
 						</a>
 					</li>
@@ -84,13 +84,15 @@ import styles from "@styles/Home.module.css"
 						<a
 							rel="noreferrer"
 							href="https://simplex.chat/contact#/?v=1-4&smp=smp%3A%2F%2FSkIkI6EPd2D63F4xFKfHk7I1UGZVNn6k1QWZ5rcyr6w%3D%40smp9.simplex.im%2FHXWrPtK34C8Mvgo6kRsmKS53vJHy8qFz%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEADfaj_vB7cuHyvJMFJuDaYKRxzEpMDLN5NXIaO9r3QmA%253D%26srv%3Djssqzccmrcws6bhmn77vgmhfjmhwlyr3u7puw4erkyoosywgl67slqqd.onion"
-							aria-label="Contáctame por SimpleX Chat">
+							title="Contáctame por SimpleX Chat">
 							<SimpleXIcon />
 						</a>
 					</li>
 				</ul>
 				<ContentGroup>
-					<label for="email">📬 Contáctame</label>
+					<label for="email" class={styles["card--profile__contact-label"]}
+						>📬 Contáctame</label
+					>
 					<Input
 						id="email"
 						name="email"
@@ -99,10 +101,10 @@ import styles from "@styles/Home.module.css"
 						disabled
 					/>
 					<div class={styles["card--profile__email-buttons"]}>
-						<Button>
+						<Button title="Copiar dirección de correo electrónico">
 							<CopyIcon />
 						</Button>
-						<Button>
+						<Button as="a" title="Enviar correo electrónico">
 							<SendIcon />
 						</Button>
 					</div>

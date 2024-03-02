@@ -16,17 +16,15 @@
 
 		&__user-info {
 			margin-top: 2.5rem;
-
-			gap: 1rem;
 		}
 
 		&__username {
-			font-size: 1.875rem;
+			font-size: var(--size-h1);
 		}
 
 		&__job-title {
 			font-weight: 700;
-			font-size: 1.125rem;
+			font-size: var(--size-h2);
 		}
 
 		&__skills {
@@ -34,8 +32,10 @@
 			justify-content: center;
 			gap: 0.5rem;
 
+			font-weight: 700;
+
 			li:not(:last-child) {
-				border-right: 1px solid #1c1c1c;
+				border-right: 2px solid black;
 				padding-right: 0.5rem;
 			}
 		}
@@ -43,6 +43,10 @@
 		&__links-list {
 			display: inline-flex;
 			gap: 1rem;
+		}
+
+		&__contact-label {
+			font-size: var(--size-h3);
 		}
 
 		&__email-buttons {
@@ -54,10 +58,11 @@
 			position: absolute;
 			top: 0;
 
-			border: 0.5rem solid black;
-			border-radius: 100%;
+			border-radius: 0.25rem;
 
 			display: block;
+
+			box-shadow: -4px 0 16px 0 rgb(31 38 135 / 16%);
 
 			transform: translateY(-50%);
 		}

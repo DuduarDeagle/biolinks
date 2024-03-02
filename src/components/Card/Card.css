@@ -4,6 +4,7 @@
 .card {
 	position: relative;
 
+	border: 1px solid rgb(255 255 255 / 40%);
 	border-radius: 0.25rem;
 	padding-block: 3rem;
 	padding-inline: 1.25rem;
@@ -12,5 +13,7 @@
 	place-items: center;
 	gap: 2rem;
 
-	background: $chetwode-blue-500;
+	background: rgba(255 255 255 / 40%);
+	backdrop-filter: blur(4px);
+	box-shadow: 0 8px 32px 0 rgb(31 38 135 / 36%);
 }

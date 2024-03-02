@@ -28,6 +28,12 @@
  * Use this to normalize default browser styles.
  */
 
+:root {
+	--size-h1: 1.875rem;
+	--size-h2: 1.25rem;
+	--size-h3: 1.125rem;
+}
+
 * {
 	box-sizing: border-box;
 	outline: 0;
@@ -51,7 +57,11 @@ body {
 	font-family: Urbanist, system-ui;
 	font-weight: 500;
 
-	background: black;
+	/* background: linear-gradient(to bottom right, #32b1db, #2f80ed); */
+	background: url("/texture.jpg");
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
 
 	user-select: none;
 }
