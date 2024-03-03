@@ -66,9 +66,14 @@ body {
 }
 
 header,
+main,
 footer {
 	padding-block: 3rem;
 	margin-top: 3rem;
+}
+
+main {
+	padding-top: 0;
 }
 
 h1,
