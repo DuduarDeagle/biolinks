@@ -9,10 +9,6 @@
 	&--profile {
 		text-align: center;
 
-		&__username {
-			font-size: var(--size-h1);
-		}
-
 		&__job-title {
 			font-weight: 700;
 			font-size: var(--size-h2);
@@ -52,6 +48,12 @@
 
 			transform: translateY(-50%);
 		}
+	}
+}
+
+.container {
+	&--link-cards {
+		gap: 4rem;
 	}
 }
 

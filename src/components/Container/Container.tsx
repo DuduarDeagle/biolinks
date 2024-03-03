@@ -1,5 +1,6 @@
 /* Import dependencies */
 import * as React from "react"
+import clsx from "clsx"
 
 /* Import styles */
 import "./Container.css"
@@ -12,8 +13,8 @@ interface Props
 	> {}
 
 /* Set up a Container component */
-const Container: React.FC<Props> = ({ children }) => {
-	return <div className="container">{children}</div>
+const Container: React.FC<Props> = ({ className, children }) => {
+	return <div className={clsx("container", className)}>{children}</div>
 }
 
 export default Container

@@ -68,12 +68,11 @@ body {
 header,
 main,
 footer {
-	padding-block: 3rem;
-	margin-top: 3rem;
+	padding-block: 2rem;
 }
 
-main {
-	padding-top: 0;
+header {
+	margin-top: 4rem;
 }
 
 h1,
@@ -85,6 +84,18 @@ h6 {
 	font-weight: 900;
 	text-wrap: balance;
 	line-height: 1.2;
+}
+
+h1 {
+	font-size: var(--size-h1);
+}
+
+h2 {
+	font-size: var(--size-h2);
+}
+
+h3 {
+	font-size: var(--size-h3);
 }
 
 p {
